@@ -5,8 +5,8 @@
     <string name="main_menu_3">Refresh</string>
     <string name="main_menu_4">Internal Log</string>
     
-    <string name="main_card_statistic_title">Test now</string>
-    <string name="main_card_statistic_indicator">--</string>
+    <string name="main_card_measure_title">Measure now</string>
+    <string name="main_card_measure_indicator">--</string>
     <string name="main_card_history_title">History</string>
     <string name="main_card_history_indicator">Check your blood pressure history</string>
     <string name="main_card_help">Help and Support</string>

@@ -42,6 +42,12 @@ class MainActivity : CompatWithPipeActivity(), View.OnClickListener {
                     Uri.parse(Constants.SUPPORT_URL)
                 )
             )
+            R.id.main_card_measure -> startActivity(
+                Intent(
+                    this,
+                    MeasureActivity::class.java
+                )
+            )
         }
     }
 
@@ -52,8 +58,9 @@ class MainActivity : CompatWithPipeActivity(), View.OnClickListener {
 
     private fun initViews(){
         setSupportActionBar(main_toolbar)
-        main_card_profile_mgr.setOnClickListener(this)
-        main_profile_mgr_modify.setOnClickListener(this)
+        main_card_measure.setOnClickListener(this)
+        main_card_history.setOnClickListener(this)
+        main_fab_history_modify.setOnClickListener(this)
         main_card_setting.setOnClickListener(this)
         main_card_help.setOnClickListener(this)
     }

@@ -7,8 +7,8 @@
     <string name="main_menu_3">刷新</string>
     <string name="main_menu_4">内部日志</string>
 
-    <string name="main_card_statistic_title">测血压</string>
-    <string name="main_card_statistic_indicator">--</string>
+    <string name="main_card_measure_title">测血压</string>
+    <string name="main_card_measure_indicator">--</string>
     <string name="main_card_history_title">历史记录</string>
     <string name="main_card_history_indicator">查看你的血压记录(</string>
     <string name="main_card_help">帮助与支持</string>

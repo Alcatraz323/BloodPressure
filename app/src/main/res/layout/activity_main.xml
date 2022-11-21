@@ -29,7 +29,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/main_card_status"
+                    android:id="@+id/main_card_measure"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginStart="16dp"
@@ -71,7 +71,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
-                                android:text="@string/main_card_statistic_title"
+                                android:text="@string/main_card_measure_title"
                                 android:textAllCaps="false"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch"
                                 android:textSize="18sp" />
@@ -80,7 +80,7 @@
                                 android:id="@+id/main_card_status_indicator"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/main_card_statistic_indicator"
+                                android:text="@string/main_card_measure_indicator"
                                 android:textColor="#FFFFFF"
                                 android:visibility="gone" />
                         </LinearLayout>
@@ -95,7 +95,7 @@
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/main_card_profile_mgr"
+                        android:id="@+id/main_card_history"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:layout_marginStart="16dp"
@@ -271,7 +271,7 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/main_profile_mgr_modify"
+        android:id="@+id/main_fab_history_modify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -280,7 +280,7 @@
         android:focusable="true"
         android:tint="#ffffff"
         android:visibility="visible"
-        app:layout_anchor="@id/main_card_profile_mgr"
+        app:layout_anchor="@id/main_card_history"
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@drawable/ic_edit_black_24dp" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

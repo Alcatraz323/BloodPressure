@@ -9,7 +9,7 @@
         android:id="@+id/measure_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:title="@string/main_menu_4" />
+        app:title="@string/main_card_measure_title" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

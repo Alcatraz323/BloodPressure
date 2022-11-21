@@ -1,6 +1,7 @@
 package io.alcatraz.bloodpressure.activities
 
 import android.os.Bundle
+import android.view.MenuItem
 import io.alcatraz.bloodpressure.R
 import io.alcatraz.bloodpressure.extended.CompatWithPipeActivity
 import kotlinx.android.synthetic.main.activity_measure.*
@@ -21,5 +22,13 @@ class MeasureActivity : CompatWithPipeActivity() {
 
     private fun initData() {
 
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> finish()
+            R.id.menu_log_refresh -> initData()
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
