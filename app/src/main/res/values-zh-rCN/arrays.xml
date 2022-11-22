@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_for_customer_code">
+        <item>爱奥乐</item>
+        <item>讯飞</item>
+        <item>海尔</item>
+    </string-array>
+
+    <string-array name="entries_for_error_code">
+        <item>未知</item>
+        <item>袖袋严重泄漏或膨胀太慢了；10秒没有达到20mmHg</item>
+        <item>未知</item>
+        <item>袖袋压力太大( 大于 295 mmHg)</item>
+        <item>不能找出舒张压或超出规定范围内</item>
+        <item>袖袋收缩太快了。(收缩大于15mmHg/秒的速度)</item>
+        <item>袖袋收缩太慢了。(收缩小于2mmHg/秒的速度)</item>
+    </string-array>
+</resources>

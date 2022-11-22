@@ -25,7 +25,7 @@
     <string name="ad_processing">进行中…</string>
     <string name="empty_view">无结果</string>
 
-    <!--关于-->
+    <!-- 关于 -->
     <string name="au_l_1">版本</string>
     <string name="au_l_2">开发者</string>
     <string name="au_l_2_1">Alcatraz</string>
@@ -33,4 +33,26 @@
     <string name="au_l_4">开放源代码许可</string>
     <string name="au_l_4_1">向开源致敬</string>
     <string name="au_osp">开源相关</string>
+
+    <!-- Blood pressure -->
+    <!-- Device info -->
+    <string name="hardware_version">硬件版本</string>
+    <string name="hardware_client">厂商</string>
+    <string name="hardware_type">类型</string>
+    <string name="hardware_model">型号</string>
+    <string name="hardware_serial">序列号</string>
+    <!-- Process report -->
+    <string name="process_heartbeat">是否检测到心跳</string>
+    <string name="process_pressure">当前压力</string>
+    <!-- Result report -->
+    <string name="result_arrhythmia">心律不齐</string>
+    <string name="result_arteriosclerosis">动脉硬化</string>
+    <string name="result_sbp">收缩压</string>
+    <string name="result_dbp">舒张压</string>
+    <string name="result_heart_rate">心率</string>
+    <!-- Error report -->
+    <string name="error_title">错误</string>
+    <string name="error_unknown">未知</string>
+    <!-- EOF report -->
+    <string name="eof_title">EOF中断数据包</string>
 </resources>

@@ -23,7 +23,7 @@
     <string name="ad_processing">Processing…</string>
     <string name="empty_view">Empty</string>
 
-    <!--About-->
+    <!-- About -->
     <string name="au_l_1">Version</string>
     <string name="au_l_2">Developer</string>
     <string name="au_l_2_1">Alcatraz</string>
@@ -31,5 +31,27 @@
     <string name="au_l_4">Open source Licenses</string>
     <string name="au_l_4_1">Respect to opensource</string>
     <string name="au_osp">Opensource Projects</string>
+
+    <!-- Blood pressure -->
+    <!-- Device info -->
+    <string name="hardware_version">Version</string>
+    <string name="hardware_client">Vendor</string>
+    <string name="hardware_type">Type</string>
+    <string name="hardware_model">Model</string>
+    <string name="hardware_serial">Serial</string>
+    <!-- Process report -->
+    <string name="process_heartbeat">Detected heartbeat</string>
+    <string name="process_pressure">Pressure</string>
+    <!-- Result report -->
+    <string name="result_arrhythmia">Arrhythmia</string>
+    <string name="result_arteriosclerosis">Arteriosclerosis</string>
+    <string name="result_sbp">SBP</string>
+    <string name="result_dbp">DBP</string>
+    <string name="result_heart_rate">Heart rate</string>
+    <!-- Error report -->
+    <string name="error_title">Error</string>
+    <string name="error_unknown">Unknown</string>
+    <!-- EOF report -->
+    <string name="eof_title">EOF Packet</string>
 
 </resources>

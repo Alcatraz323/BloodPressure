@@ -6,13 +6,6 @@
         android:title="@string/main_menu_2" />
 
     <item
-        android:id="@+id/menu_main_refresh"
-        android:icon="@drawable/ic_refresh_white_24dp"
-        android:title="@string/main_menu_3"
-        android:showAsAction="always"
-        tools:ignore="AppCompatResource" />
-
-    <item
         android:id="@+id/menu_main_log"
         android:title="@string/main_menu_4" />
 

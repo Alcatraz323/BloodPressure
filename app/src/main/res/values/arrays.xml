@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_for_customer_code">
+        <item>Bioland</item>
+        <item>iFLYTEK</item>
+        <item>Haier</item>
+    </string-array>
+
+    <string-array name="entries_for_error_code">
+        <item>Unknown</item>
+        <item>Sleeve bag leaking or too slow to bump, can't reach 20mmHg in 10s</item>
+        <item>Unknown</item>
+        <item>Sleeve bag pressure too high(larger than 295 mmHg)</item>
+        <item>Can't read diastolic pressure or not in typical value</item>
+        <item>Sleeve bag squeezing too fast.(faster than 15mmHg/s)</item>
+        <item>Sleeve bag squeezing too slow.(slower than 2mmHg/s)</item>
+    </string-array>
+</resources>
