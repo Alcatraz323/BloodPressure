@@ -6,8 +6,8 @@
     <string name="main_menu_3">Refresh</string>
     <string name="main_menu_4">Internal Log</string>
     
-    <string name="main_card_measure_title">Measure now</string>
-    <string name="main_card_measure_indicator">--</string>
+    <string name="main_card_measure_title">Measure</string>
+    <string name="main_card_measure_indicator">Click to start</string>
     <string name="main_card_history_title">History</string>
     <string name="main_card_history_indicator">Check your blood pressure history</string>
     <string name="main_card_help">Help and Support</string>
@@ -43,18 +43,25 @@
     <string name="hardware_model">Model</string>
     <string name="hardware_serial">Serial</string>
     <!-- Process report -->
-    <string name="process_heartbeat">Detected heartbeat</string>
-    <string name="process_pressure">Pressure</string>
+    <string name="process_heartbeat">Detected heartbeat: </string>
+    <string name="process_pressure">Pressure: </string>
     <!-- Result report -->
-    <string name="result_arrhythmia">Arrhythmia</string>
-    <string name="result_arteriosclerosis">Arteriosclerosis</string>
-    <string name="result_sbp">SBP</string>
-    <string name="result_dbp">DBP</string>
-    <string name="result_heart_rate">Heart rate</string>
+    <string name="result_arrhythmia">Arrhythmia: </string>
+    <string name="result_arteriosclerosis">Arteriosclerosis: </string>
+    <string name="result_sbp">SBP: </string>
+    <string name="result_dbp">DBP: </string>
+    <string name="result_heart_rate">Heart rate: </string>
     <!-- Error report -->
     <string name="error_title">Error</string>
     <string name="error_unknown">Unknown</string>
     <!-- EOF report -->
     <string name="eof_title">EOF Packet</string>
+
+    <string name="measure_control">Control</string>
+    <string name="measure_ready">Ready</string>
+    <string name="measure_error">Error</string>
+    <string name="measure_processing">Measuring</string>
+    <string name="measure_done">Done</string>
+    <string name="measure_status">Status</string>
 
 </resources>

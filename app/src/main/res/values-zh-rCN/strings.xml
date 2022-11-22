@@ -8,9 +8,9 @@
     <string name="main_menu_4">内部日志</string>
 
     <string name="main_card_measure_title">测血压</string>
-    <string name="main_card_measure_indicator">--</string>
+    <string name="main_card_measure_indicator">点击开始</string>
     <string name="main_card_history_title">历史记录</string>
-    <string name="main_card_history_indicator">查看你的血压记录(</string>
+    <string name="main_card_history_indicator">查看你的血压记录</string>
     <string name="main_card_help">帮助与支持</string>
 
     <string name="til_error_inv_param">无效参数</string>
@@ -44,17 +44,24 @@
     <string name="hardware_model">型号</string>
     <string name="hardware_serial">序列号</string>
     <!-- Process report -->
-    <string name="process_heartbeat">是否检测到心跳</string>
-    <string name="process_pressure">当前压力</string>
+    <string name="process_heartbeat">是否检测到心跳: </string>
+    <string name="process_pressure">当前压力: </string>
     <!-- Result report -->
-    <string name="result_arrhythmia">心律不齐</string>
-    <string name="result_arteriosclerosis">动脉硬化</string>
-    <string name="result_sbp">收缩压</string>
-    <string name="result_dbp">舒张压</string>
-    <string name="result_heart_rate">心率</string>
+    <string name="result_arrhythmia">心律不齐: </string>
+    <string name="result_arteriosclerosis">动脉硬化: </string>
+    <string name="result_sbp">收缩压: </string>
+    <string name="result_dbp">舒张压: </string>
+    <string name="result_heart_rate">心率: </string>
     <!-- Error report -->
     <string name="error_title">错误</string>
     <string name="error_unknown">未知</string>
     <!-- EOF report -->
     <string name="eof_title">EOF中断数据包</string>
+
+    <string name="measure_control">控制台</string>
+    <string name="measure_ready">就绪</string>
+    <string name="measure_error">出错</string>
+    <string name="measure_processing">测量中</string>
+    <string name="measure_done">完成</string>
+    <string name="measure_status">状态</string>
 </resources>

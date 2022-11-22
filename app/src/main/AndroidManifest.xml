@@ -26,6 +26,7 @@
         <activity android:exported="false" android:name=".activities.AboutActivity" />
         <activity android:exported="false" android:name=".activities.MeasureActivity" />
         <activity android:exported="false" android:name=".activities.DeviceInfoActivity" />
+        <activity android:exported="false" android:name=".activities.HistoryActivity" />
     </application>
 
 </manifest>
