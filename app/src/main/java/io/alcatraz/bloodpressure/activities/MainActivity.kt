@@ -48,6 +48,12 @@ class MainActivity : CompatWithPipeActivity(), View.OnClickListener {
                     MeasureActivity::class.java
                 )
             )
+            R.id.main_card_device_info -> startActivity(
+                Intent(
+                    this,
+                    DeviceInfoActivity::class.java
+                )
+            )
         }
     }
 
@@ -61,7 +67,7 @@ class MainActivity : CompatWithPipeActivity(), View.OnClickListener {
         main_card_measure.setOnClickListener(this)
         main_card_history.setOnClickListener(this)
         main_fab_history_modify.setOnClickListener(this)
-        main_card_setting.setOnClickListener(this)
+        main_card_device_info.setOnClickListener(this)
         main_card_help.setOnClickListener(this)
     }
 

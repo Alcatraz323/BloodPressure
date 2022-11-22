@@ -36,6 +36,8 @@
 
     <!-- Blood pressure -->
     <!-- Device info -->
+    <string name="hardware_title">硬件信息</string>
+    <string name="hardware_loading">加载中</string>
     <string name="hardware_version">硬件版本</string>
     <string name="hardware_client">厂商</string>
     <string name="hardware_type">类型</string>

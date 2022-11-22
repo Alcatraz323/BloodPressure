@@ -161,7 +161,7 @@
                         android:paddingBottom="16dp">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/main_card_setting"
+                            android:id="@+id/main_card_device_info"
                             android:layout_width="match_parent"
                             android:layout_height="54dp"
                             android:layout_marginStart="16dp"
@@ -185,7 +185,7 @@
                                     android:layout_height="24dp"
                                     android:layout_margin="16dp"
                                     android:tint="#A5A5A5"
-                                    app:srcCompat="@drawable/ic_cog" />
+                                    app:srcCompat="@drawable/ic_baseline_perm_device_information_24" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -199,7 +199,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="1dp"
-                                        android:text="@string/main_menu_1"
+                                        android:text="@string/hardware_title"
                                         android:textAllCaps="false"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch"
                                         android:textSize="18sp" />

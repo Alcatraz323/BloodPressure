@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">BloodPressure</string>
     <string name="main_menu_1">Settings</string>
@@ -34,6 +35,8 @@
 
     <!-- Blood pressure -->
     <!-- Device info -->
+    <string name="hardware_title">Hardware Info</string>
+    <string name="hardware_loading">Loading</string>
     <string name="hardware_version">Version</string>
     <string name="hardware_client">Vendor</string>
     <string name="hardware_type">Type</string>

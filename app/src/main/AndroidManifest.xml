@@ -25,6 +25,7 @@
         <activity android:exported="false" android:name=".activities.LogActivity" />
         <activity android:exported="false" android:name=".activities.AboutActivity" />
         <activity android:exported="false" android:name=".activities.MeasureActivity" />
+        <activity android:exported="false" android:name=".activities.DeviceInfoActivity" />
     </application>
 
 </manifest>

@@ -10,15 +10,14 @@ import io.alcatraz.bloodpressure.beans.ProcessData
 import io.alcatraz.bloodpressure.beans.ResultPacket
 import java.util.*
 
-class BloodPressureApis(
-    val context: Context,
-    var responseInterface: BloodPressureResponseInterface
-) : SerialManager.SerialCallback {
+class BloodPressureApis() : SerialManager.SerialCallback {
     private val OPEN_SERIALPORT = "sprocomm.open.serialport"
     private val BLOODPRESSUREINFO_CUS = byteArrayOf(90, 10, 0, 12, 1, 1, 8, 0, 33, -99)
     private lateinit var mSerialManager: SerialManager
+    private lateinit var context: Context
+    var responseInterface: BloodPressureResponseInterface? = null
 
-    fun openSerial() {
+    private fun openSerial() {
         mSerialManager = SerialManager.getInstance(context)
         mSerialManager.setOnListener(this)
         val intent2 = Intent()
@@ -27,7 +26,7 @@ class BloodPressureApis(
         context.sendBroadcast(intent2)
     }
 
-    fun closeSerial() {
+    private fun closeSerial() {
         mSerialManager.closeSerialPort(2)
     }
 
@@ -120,7 +119,7 @@ class BloodPressureApis(
                         customerStr
                     )
 
-                    responseInterface.onDeviceInfo(deviceInfo)
+                    responseInterface?.onDeviceInfo(deviceInfo)
                 } else if (packageType == 2 && origin.size == 8) /* Process report */ {
                     LogBuff.I(hexStringBuilder.toString())
                     val heartbeat = if (origin[3].toInt() == 0) {
@@ -131,7 +130,7 @@ class BloodPressureApis(
                     val pressure = origin[5].toInt() + origin[6].toInt() * 255
 
                     val processData = ProcessData(heartbeat, pressure)
-                    responseInterface.onProcessData(processData)
+                    responseInterface?.onProcessData(processData)
                 } else if (packageType == 3 && origin.size == 14) /* Result report */ {
                     LogBuff.I(hexStringBuilder.toString())
                     var arrhythmia = false
@@ -178,7 +177,7 @@ class BloodPressureApis(
 
                     val resultPacket =
                         ResultPacket(arrhythmiaStr, arteriosclerosisStr, sbp, dbp, heartRate)
-                    responseInterface.onResultPacket(resultPacket)
+                    responseInterface?.onResultPacket(resultPacket)
                 } else if (packageType == 238 && origin.size == 5) /* Error report */ {
                     LogBuff.E(hexStringBuilder.toString())
                     val errCode = origin[3].toInt()
@@ -187,12 +186,21 @@ class BloodPressureApis(
                     } else {
                         context.getString(R.string.error_unknown)
                     }
-                    responseInterface.onError(reason)
+                    responseInterface?.onError(reason)
                 } else if (packageType == 5 && origin.size == 5) /* EOF report */ {
                     LogBuff.D("EOF Packet: $hexStringBuilder")
                 }
             }
         }
+    }
+
+    constructor(context: Context) : this() {
+        this.context = context
+        openSerial()
+    }
+
+    protected fun finalize() {
+        closeSerial()
     }
 
     interface BloodPressureResponseInterface {
