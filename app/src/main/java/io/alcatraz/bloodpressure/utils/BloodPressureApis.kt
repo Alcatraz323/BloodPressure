@@ -129,7 +129,7 @@ class BloodPressureApis() : SerialManager.SerialCallback {
                     }
                     val pressure = origin[5].toInt() + origin[6].toInt() * 255
 
-                    val processData = ProcessData(heartbeat, pressure)
+                    val processData = ProcessData(origin[3].toInt() != 0, heartbeat, pressure)
                     responseInterface?.onProcessData(processData)
                 } else if (packageType == 3 && origin.size == 14) /* Result report */ {
                     LogBuff.I(hexStringBuilder.toString())

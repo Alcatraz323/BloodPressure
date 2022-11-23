@@ -16,8 +16,8 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="16dp"
-        android:tint="@color/base_gray_tint"
-        app:srcCompat="@drawable/ic_cog" />
+        app:srcCompat="@drawable/ic_cog"
+        app:tint="@color/base_gray_tint" />
 
     <LinearLayout
         android:layout_width="match_parent"

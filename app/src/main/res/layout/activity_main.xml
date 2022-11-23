@@ -56,8 +56,8 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_margin="16dp"
-                            android:tint="#ffffff"
-                            app:srcCompat="@drawable/ic_multiline_chart_black_24dp" />
+                            app:srcCompat="@drawable/ic_multiline_chart_black_24dp"
+                            app:tint="#ffffff" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -116,8 +116,8 @@
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_margin="16dp"
-                                android:tint="#A5A5A5"
-                                app:srcCompat="@drawable/ic_history_black_24dp" />
+                                app:srcCompat="@drawable/ic_history_black_24dp"
+                                app:tint="#A5A5A5" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -182,8 +182,8 @@
                                     android:layout_width="24dp"
                                     android:layout_height="24dp"
                                     android:layout_margin="16dp"
-                                    android:tint="#A5A5A5"
-                                    app:srcCompat="@drawable/ic_baseline_perm_device_information_24" />
+                                    app:srcCompat="@drawable/ic_baseline_perm_device_information_24"
+                                    app:tint="#A5A5A5" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -233,8 +233,8 @@
                                     android:layout_width="24dp"
                                     android:layout_height="24dp"
                                     android:layout_margin="16dp"
-                                    android:tint="#A5A5A5"
-                                    app:srcCompat="@drawable/ic_help_outline_black_24dp" />
+                                    app:srcCompat="@drawable/ic_help_outline_black_24dp"
+                                    app:tint="#A5A5A5" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"

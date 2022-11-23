@@ -89,7 +89,11 @@ class MeasureActivity : CompatWithPipeActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun updateProcessingPanel() {
-        heart_beat_detect.text = getString(R.string.process_heartbeat) + mProcessData.heartbeat
+        if(mProcessData.heartBeat) {
+            heart_beat_detect_indicator_active.visibility = View.VISIBLE
+        } else {
+            heart_beat_detect_indicator_active.visibility = View.GONE
+        }
         pressure_status.text = getString(R.string.process_pressure) + mProcessData.pressure
         pressure_progress.progress = mProcessData.pressure
     }
