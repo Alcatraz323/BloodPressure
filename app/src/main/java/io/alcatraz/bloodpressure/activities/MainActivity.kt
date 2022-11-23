@@ -21,13 +21,18 @@ class MainActivity : CompatWithPipeActivity(), View.OnClickListener {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val menuInflater = MenuInflater(this)
-        menuInflater.inflate(R.menu.activity_main_menu,menu)
+        menuInflater.inflate(R.menu.activity_main_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.menu_main_about -> startActivity(Intent(this@MainActivity, AboutActivity::class.java))
+        when (item.itemId) {
+            R.id.menu_main_about -> startActivity(
+                Intent(
+                    this@MainActivity,
+                    AboutActivity::class.java
+                )
+            )
             R.id.menu_log_refresh -> initData()
             R.id.menu_main_log -> startActivity(Intent(this@MainActivity, LogActivity::class.java))
         }
@@ -35,7 +40,7 @@ class MainActivity : CompatWithPipeActivity(), View.OnClickListener {
     }
 
     override fun onClick(p0: View?) {
-        when(p0?.id){
+        when (p0?.id) {
             R.id.main_card_help -> startActivity(
                 Intent(
                     Intent.ACTION_VIEW,
@@ -54,15 +59,21 @@ class MainActivity : CompatWithPipeActivity(), View.OnClickListener {
                     DeviceInfoActivity::class.java
                 )
             )
+            R.id.main_card_history, R.id.main_fab_history_modify -> startActivity(
+                Intent(
+                    this,
+                    HistoryActivity::class.java
+                )
+            )
         }
     }
 
-    private fun initialize(){
+    private fun initialize() {
         initData()
         initViews()
     }
 
-    private fun initViews(){
+    private fun initViews() {
         setSupportActionBar(main_toolbar)
         main_card_measure.setOnClickListener(this)
         main_card_history.setOnClickListener(this)
@@ -71,7 +82,7 @@ class MainActivity : CompatWithPipeActivity(), View.OnClickListener {
         main_card_help.setOnClickListener(this)
     }
 
-    private fun initData(){
+    private fun initData() {
 
     }
 }

@@ -9,7 +9,7 @@
     <string name="main_card_measure_title">Measure</string>
     <string name="main_card_measure_indicator">Click to start</string>
     <string name="main_card_history_title">History</string>
-    <string name="main_card_history_indicator">Check your blood pressure history</string>
+    <string name="main_card_history_indicator">Check your measure history</string>
     <string name="main_card_help">Help and Support</string>
 
     <string name="til_error_inv_param">Invalid parameter</string>
@@ -63,5 +63,10 @@
     <string name="measure_processing">Measuring</string>
     <string name="measure_done">Done</string>
     <string name="measure_status">Status</string>
+
+    <string name="history_menu_1">Clear history</string>
+    <string name="history_clear_confirm">Are you sure to clear history</string>
+    <string name="history_data_1">SBP/DBP: %d/%d, Heart rate: %d</string>
+    <string name="history_data_2">Arrhythmia: %s, Arteriosclerosis: %s</string>
 
 </resources>

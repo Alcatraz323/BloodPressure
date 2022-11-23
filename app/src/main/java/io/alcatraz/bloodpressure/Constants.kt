@@ -4,7 +4,7 @@ import io.alcatraz.bloodpressure.beans.QueryElement
 
 object Constants {
     const val MY_PACKAGE_NAME = "io.alcatraz.bloodpressure"
-    const val MY_PROJECT_CODE = "bloodpressure"
+    const val MY_PROJECT_CODE = "BloodPressure"
     const val MY_GITHUB = "https://github.com/Alcatraz323/"
     const val MY_GITHUB_PAGE = "https://alcatraz323.github.io/bioland_bloodpressure"
     const val OPEN_SOURCE_URL = MY_GITHUB + MY_PROJECT_CODE

@@ -11,6 +11,7 @@ import io.alcatraz.bloodpressure.beans.ProcessData
 import io.alcatraz.bloodpressure.beans.ResultPacket
 import io.alcatraz.bloodpressure.extended.CompatWithPipeActivity
 import io.alcatraz.bloodpressure.utils.BloodPressureApis
+import io.alcatraz.bloodpressure.utils.IOUtils
 import kotlinx.android.synthetic.main.activity_measure.*
 import kotlinx.android.synthetic.main.layout_done.*
 import kotlinx.android.synthetic.main.layout_error.*
@@ -47,6 +48,10 @@ class MeasureActivity : CompatWithPipeActivity() {
 
             override fun onResultPacket(resultPacket: ResultPacket) {
                 mResultPacket = resultPacket
+                val historyFilePath = filesDir.absolutePath + "/history.dat"
+                var historyStr = IOUtils.okioRead(historyFilePath)
+                historyStr += ";" + mResultPacket.toStorageString()
+                IOUtils.okioWrite(historyFilePath, historyStr)
                 runOnUiThread {
                     disableStopButton()
                     showIcon()
@@ -97,8 +102,8 @@ class MeasureActivity : CompatWithPipeActivity() {
     @SuppressLint("SetTextI18n")
     private fun updateDonePanel() {
         measure_card_processing_indicator_image.setImageResource(R.drawable.ic_check_green_24dp)
-        arrhythmia.text = getString(R.string.result_arrhythmia) + mResultPacket.arrhythmia
-        arteriosclerosis.text = getString(R.string.result_arteriosclerosis) + mResultPacket.arteriosclerosis
+        arrhythmia.text = getString(R.string.result_arrhythmia) + mResultPacket.arrhythmiaStr
+        arteriosclerosis.text = getString(R.string.result_arteriosclerosis) + mResultPacket.arteriosclerosisStr
         sbp.text = getString(R.string.result_sbp) + mResultPacket.sbp
         dbp.text = getString(R.string.result_dbp) + mResultPacket.dbp
         heart_rate.text = getString(R.string.result_heart_rate) + mResultPacket.heartRate

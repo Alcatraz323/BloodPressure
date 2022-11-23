@@ -14,13 +14,14 @@ object IOUtils {
             bufferedSource = source.buffer()
             return bufferedSource.readUtf8()
         } catch (e: FileNotFoundException) {
+            File(dir).createNewFile()
             e.printStackTrace()
         } catch (e: IOException) {
             e.printStackTrace()
         } finally {
             closeQuietly(bufferedSource)
         }
-        return "Failed to Read:$dir"
+        return ""
     }
 
     fun okioWrite(dir: String, content: String) {

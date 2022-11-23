@@ -176,7 +176,7 @@ class BloodPressureApis() : SerialManager.SerialCallback {
                     }
 
                     val resultPacket =
-                        ResultPacket(arrhythmiaStr, arteriosclerosisStr, sbp, dbp, heartRate)
+                        ResultPacket(System.currentTimeMillis(), if(arrhythmia) 1 else 0, arrhythmiaStr, if(arteriosclerosis) 1 else 0, arteriosclerosisStr, sbp, dbp, heartRate)
                     responseInterface?.onResultPacket(resultPacket)
                 } else if (packageType == 238 && origin.size == 5) /* Error report */ {
                     LogBuff.E(hexStringBuilder.toString())
